@@ -14,6 +14,6 @@ void serialPrintln(float value);
 String serialReadChar(bool blocking);
 String serialReadLine();
 int serialAvailable();
-void serialPrintArray(const std::vector<String>& arr);
+
 
 #endif
