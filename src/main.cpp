@@ -1,5 +1,6 @@
 #include <Arduino.h>
 #include "oled.h"
+#include "servos.h"
 
 const int TRIG_PIN = 9;   
 const int ECHO_PIN = 10;  
@@ -19,6 +20,8 @@ void loop() {
   Serial.print("Entfernung: ");
   Serial.print(readUltrasonicDistance(TRIG_PIN, ECHO_PIN));
   Serial.println(" cm");
+
+  testServoSweep(1);
   
   delay(200); 
   
